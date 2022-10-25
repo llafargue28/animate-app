@@ -1,0 +1,7 @@
+{
+  "name": "animate-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
