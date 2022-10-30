@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-button  fill="clear" slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-button>
+    <ion-title>EasyAnimation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list color="succcess">
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://cdn.pixabay.com/photo/2016/05/30/13/05/girl-1424685_960_720.png" >
+      </ion-avatar>
+      <ion-label>
+        <h1>Margot Lafargue</h1>
+        <p>Animation :<span class="money" >46</span></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://cdn.pixabay.com/photo/2016/05/30/15/39/girl-1424994_960_720.png" >
+      </ion-avatar>
+      <ion-label>
+        <h1>Raphaëlle Lafargue</h1>
+        <p>Animation : <span class="money" >30</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <app-animations-besoin-card status="En Attente" createdAt="23/10/2022 10:18" updatedAt="26/08/22" 
+  notes="Mariage de Sophie(45ans) et Laurence (23 ans)">
+  <ion-card-header header >  
+    <ion-card-subtitle>Dernière Evénement</ion-card-subtitle>
+  </ion-card-header>
+  <ion-button color="success" fill="clear" size="full" footer (click)="gotoanimations()">Voir tout</ion-button>
+</app-animations-besoin-card>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" (click)="newanimation()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
+
